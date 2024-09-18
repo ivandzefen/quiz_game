@@ -51,7 +51,7 @@ After all participants have completed the quiz, the program will display:
 If you encounter any issues while running the program, ensure that:
 - You have Python 3.x installed correctly.
 - You are in the correct directory when running the Python command.
-- The `code_quiz.py` file has not been modified or corrupted.
+- The `code_quiz.py` and `questions.tsv` files have not been modified or corrupted.
 
 For any other issues, please check the error message provided and consult Python documentation or seek help from a Python community forum.
 
