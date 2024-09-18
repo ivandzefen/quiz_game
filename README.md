@@ -17,7 +17,7 @@ This Python program is an interactive quiz application that allows users to crea
 
 ### Running the Program
 1. Ensure you have Python 3.x installed on your system.
-2. Save the `code_quiz.py` file to your local machine.
+2. Save the `code_quiz.py` and `questions.tsv` files to your local machine in the same directory.
 3. Open a terminal or command prompt.
 4. Navigate to the directory containing `code_quiz.py`.
 5. Run the program using the command:
@@ -26,10 +26,7 @@ This Python program is an interactive quiz application that allows users to crea
    ```
 
 ### Creating a Quiz
-1. When prompted, enter the number of questions you want in your quiz.
-2. For each question:
-   - Enter the question text.
-   - Enter the correct answer for that question.
+When prompted, enter the number of questions you want in your quiz.
 
 ### Taking the Quiz
 1. Enter your name when prompted.
