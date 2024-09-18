@@ -9,7 +9,7 @@ with open('questions.tsv','r') as f:
         question_database.append(line.split('\t')[0])
         answer_database.append(line.split('\t')[1][0:-1]
     del(data)
-                               
+
 def get_valid_input(prompt, input_type=str, allow_empty=False):
     while True:
         user_input = input(prompt).strip()
