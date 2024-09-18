@@ -4,7 +4,6 @@
 This Python program is an interactive quiz application that allows users to create custom quizzes, take quizzes, and view results. It's designed to be run from the command line and supports multiple participants.
 
 ## Features
-- Custom quiz creation
 - Randomized question order for each quiz attempt
 - Multiple participant support
 - Score tracking and statistics
