@@ -36,7 +36,7 @@ def get_quiz_content():
             print("Incorrect number inserted, number of questions set to 10")
             n_questions=10
     print(f"Please enter {n_questions} questions and their corresponding answers.")
-    questions_numbers = random.sample(range(0,len(question_database),n_questions)
+    questions_numbers = random.sample(range(0,len(question_database)),n_questions)
     for i in questions_numbers:
         questions.append(question_database[i])
         answers.append(answer_database[i])
