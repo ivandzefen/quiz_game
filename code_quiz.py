@@ -65,13 +65,13 @@ def run_quiz(questions, answers):
     percentage = (score / len(questions)) * 100
     print(f"Quiz completed! Your score: {score}/{len(questions)} ({percentage:.2f}%)")
     if len(correct):
-        print('Questions correctly answered')
+        print('Questions correctly answered\n\n')
         for question_num in correct:
-            print(questions[question_num])
+            print(f'{questions[question_num]}\n')
     if len(wrong):
-        print('Questions failed and qnswers')
+        print('Questions failed and qnswers\n\n')
         for question_num in wrong:
-            print(f'{questions[question_num]} : {answers[question_num]}')
+            print(f'{questions[question_num]} : {answers[question_num]}\n')
     
     return name, score
 
