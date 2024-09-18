@@ -1,6 +1,14 @@
 import sys
 import random
 
+question_database=[]
+answer_database=[]
+with open('questions.tsv','r') as f:
+    data = f.readlines()
+    for line in data:
+        question_database.append(line.split('\t')[0])
+        answer_database.append(line.split('\t')[1][0:-1]
+    del(data)
 def get_valid_input(prompt, input_type=str, allow_empty=False):
     while True:
         user_input = input(prompt).strip()
@@ -21,16 +29,16 @@ def get_quiz_content():
     n_questions=0
     while n_questions<1:
         try :
-            n_questions=int(input("Please enter the number of questions(it should be an integer greater than 0): "))
+            n_questions=int(input("Please enter the number of questions(it should be an integer greater than 0 and less): "))
             n_questions=n_questions if n_questions>0 else 0
         except ValueError:
-            print("the number of questions should be an integer")
+            print("Incorrect number inserted, number of questions set to 10")
+            n_questions=10
     print(f"Please enter {n_questions} questions and their corresponding answers.")
-    for i in range(n_questions):
-        question = get_valid_input(f"Enter question {i+1}: ")
-        answer = get_valid_input(f"Enter answer for question {i+1}: ")
-        questions.append(question)
-        answers.append(answer)
+    questions_numbers = random.sample(range(0,len(question_database),n_questions)
+    for i in questions_numbers:
+        questions.append(question_database[i])
+        answers.append(answer_database[i])
     return questions, answers
 
 def run_quiz(questions, answers):
