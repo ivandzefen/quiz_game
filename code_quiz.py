@@ -3,7 +3,7 @@ import random
 
 question_database=[]
 answer_database=[]
-with open('questions.tsv','r') as f:
+with open('questions.tsv','r',encoding="utf8") as f:
     data = f.readlines()
     for line in data:
         question_database.append(line.split('\t')[0])
